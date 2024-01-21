@@ -12,6 +12,8 @@ import {
   NavbarBrand,
   NavbarItem,
   NavbarMenuItem,
+  Divider,
+  Spacer
 } from "@nextui-org/react";
 
 import { link as linkStyles } from "@nextui-org/theme";
@@ -62,7 +64,8 @@ export const Navbar = () => {
   }, [setUserAccount]);
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky" className="bg-background/60">
+    <div className="mx-4">
+    <NextUINavbar maxWidth="xl" className="bg-gradient-to-r from-primary to-primary-600 rounded-b-2xl">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -178,5 +181,6 @@ export const Navbar = () => {
         </div>
       </NavbarMenu>
     </NextUINavbar>
+    </div>
   );
 };
