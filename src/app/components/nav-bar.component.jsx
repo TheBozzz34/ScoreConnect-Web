@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Button,
   Kbd,
@@ -36,7 +38,11 @@ import { auth } from "@/utils/firebase.utils";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 
+import { useRouter, usePathname } from "next/navigation";
+
 export const Navbar = () => {
+  const router = useRouter();
+  const pathname = usePathname();
   const [userAccount, setUserAccount] = useState();
   const [loading, setLoading] = useState(true);
   const [loggedIn, setLoggedIn] = useState(false);
@@ -65,25 +71,23 @@ export const Navbar = () => {
           </NextLink>
         </NavbarBrand>
 
-
         {!loggedIn && (
-
-        <div className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
-                )}
-                color="foreground"
-                href={item.href}
-              >
-                {item.label}
-              </NextLink>
-            </NavbarItem>
-          ))}
-        </div>
+          <div className="hidden lg:flex gap-4 justify-start ml-2">
+            {siteConfig.navItems.map((item) => (
+              <NavbarItem key={item.href}>
+                <NextLink
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  )}
+                  color="foreground"
+                  href={item.href}
+                >
+                  {item.label}
+                </NextLink>
+              </NavbarItem>
+            ))}
+          </div>
         )}
       </NavbarContent>
 
@@ -115,16 +119,20 @@ export const Navbar = () => {
                 View Account
               </Button>
 
+              {pathname === "/app" ? (
+                <></>
+              ) : (
                 <Button
-                    as={Link}
-                    className="ml-1 text-sm font-normal text-default-600 bg-green-600"
-                    href="/app"
-                    startContent={<UserIcon className="text-danger" />}
-                    variant="flat"
+                  as={Link}
+                  className="ml-1 text-sm font-normal text-default-600 bg-green-600"
+                  href="/app"
+                  startContent={<UserIcon className="text-danger" />}
+                  variant="flat"
                 >
-                    Open App
-                    <FaExternalLinkAlt />
+                  Open App
+                  <FaExternalLinkAlt />
                 </Button>
+              )}
             </div>
           ) : (
             <Button
