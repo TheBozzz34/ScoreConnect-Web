@@ -32,7 +32,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif; 
-  background: linear-gradient(to right, #FFB457, #FF705B);
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
   background-repeat: repeat-y;
 }
 

@@ -88,14 +88,15 @@ export default function Page() {
 
                 <div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
                     <div className="flex flex-row items-center justify-center gap-4 py-8 md:py-10">
-                        <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7 transform hover:scale-105 transition duration-300 ease-in-out border-4 border-violet-600 border-opacity-0 hover:border-opacity-100" radius='md'>
                             <Image
                                 removeWrapper
                                 alt="Relaxing app background"
                                 className="z-0 w-full h-full object-cover"
                                 src="https://www.upvoty.com/wp-content/uploads/2020/09/features.png"
+                                radius='md'
                             />
-                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-100">
+                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-100 rounded-b-md">
                                 <div className="flex flex-grow gap-2 items-center">
                                     <Image
                                         alt="app icon"
@@ -110,14 +111,15 @@ export default function Page() {
                             </CardFooter>
                         </Card>
 
-                        <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7 transform hover:scale-105 transition duration-300 ease-in-out border-4 border-violet-600 border-opacity-0 hover:border-opacity-100" radius='md'>
                             <Image
                                 removeWrapper
                                 alt="Relaxing app background"
                                 className="z-0 w-full h-full object-cover"
                                 src="https://modulabs.co.kr/wp-content/uploads/2023/10/nextjs14-1536x864.png"
+                                radius='md'
                             />
-                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100 rounded-b-md">
                                 <div className="flex flex-grow gap-2 items-center">
                                     <Image
                                         alt="app icon"
@@ -132,14 +134,15 @@ export default function Page() {
                             </CardFooter>
                         </Card>
 
-                        <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7 transform hover:scale-105 transition duration-300 ease-in-out border-4 border-violet-600 border-opacity-0 hover:border-opacity-100" radius='md'>
                             <Image
                                 removeWrapper
                                 alt="Relaxing app background"
                                 className="z-0 w-full h-full object-cover"
                                 src="https://img.freepik.com/premium-photo/abstract-neon-lights-background-colorful-design_910135-4906.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699228800&semt=ais"
+                                radius='md'
                             />
-                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100 rounded-b-md">
                                 <div className="flex flex-grow gap-2 items-center">
                                     <Image
                                         alt="app icon"
@@ -163,11 +166,11 @@ export default function Page() {
 
 
 
-            <footer className="rounded-t-lg shadow mx-4 bg-gray-800">
+            <footer className="rounded-t-lg shadow mx-4 bg-gradient-to-r from-[#3E187A] to-[#994ECC]">
                 <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://necrozma.xyz" className="hover:underline">ScoreConnect</a>. All Rights Reserved.
+                    <span className="text-sm">© 2024 <a href="https://necrozma.xyz" className="hover:underline">ScoreConnect</a>. All Rights Reserved.
                     </span>
-                    <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                    <ul className="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
                         <li>
                             <a href="#" className="hover:underline me-4 md:me-6">About</a>
                         </li>

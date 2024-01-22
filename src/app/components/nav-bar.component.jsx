@@ -65,7 +65,7 @@ export const Navbar = () => {
 
   return (
     <div className="mx-4">
-    <NextUINavbar maxWidth="xl" className="bg-gradient-to-r from-primary to-primary-600 rounded-b-2xl">
+    <NextUINavbar maxWidth="xl" className="bg-gradient-to-r from-[#994ECC] to-[#3E187A] rounded-b-2xl">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -100,13 +100,13 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
+            <TwitterIcon className="text-default" />
           </Link>
           <Link isExternal href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
+            <DiscordIcon className="text-default" />
           </Link>
           <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
+            <GithubIcon className="text-default" />
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
