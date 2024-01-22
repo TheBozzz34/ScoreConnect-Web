@@ -100,13 +100,13 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default" />
+            <TwitterIcon className="text-white" />
           </Link>
           <Link isExternal href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default" />
+            <DiscordIcon className="text-white" />
           </Link>
           <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default" />
+            <GithubIcon className="text-white" />
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
